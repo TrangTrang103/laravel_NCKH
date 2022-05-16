@@ -146,7 +146,7 @@ ol {
 }
 
 .spad {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     padding-bottom: 100px;
 }
 
@@ -570,7 +570,8 @@ ol {
 -----------------------*/
 
 .hero {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
+    height: 61%;
 }
 
 .hero.hero-normal {
@@ -1270,7 +1271,7 @@ ol {
 -----------------------*/
 
 .product {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     padding-bottom: 80px;
 }
 

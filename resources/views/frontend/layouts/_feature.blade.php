@@ -8,19 +8,15 @@
                 </div>
                 <div class="featured__controls">
                     <ul>
-                        <li class="active" data-filter="*">Tất cả</li>
-                        <li data-filter=".oranges">Họa cụ</li>
-                        <li data-filter=".fresh-meat">Công nghệ</li>
-                        <li data-filter=".vegetables">Tài liệu</li>
-                        <li data-filter=".fastfood">Sản phẩm sinh viên</li>
-                        <li data-filter=".oranges">Model KT-DH</li>
-                        <li data-filter=".oranges">Khóa học</li>
+                        @foreach ($categories as $key)
+                            <li><a href="#" style="color: black">{{ $key->ten_loai }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row featured__filter">
-            @foreach ($latestProduct as $key)
+            @foreach ($product as $key)
                 <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="../biasanpham/{{ $key->image }}">

@@ -30,7 +30,11 @@
         <div class="loader"></div>
     </div>
 
-    @yield('content');
+    @include('frontend.layouts._header')
+
+    @yield('content')
+
+    @include('frontend.layouts._footer')
     
     <!-- Js Plugins -->
     <script src="{!! asset('js/jquery-3.3.1.min.js') !!}"></script>
